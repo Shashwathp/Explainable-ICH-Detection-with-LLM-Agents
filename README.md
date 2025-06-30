@@ -165,6 +165,14 @@ Example `request.json`:
 3. **SAM2 Segmentation**: Creates precise hemorrhage masks
 4. **Clinical Analysis**: Evaluates mass effect, midline shift, fractures
 
+
+### Training Methodology
+
+**YOLOv10 Training Configuration**: The YOLOv10 model is trained on NVIDIA A100 GPU for 100 epochs with a batch size of 16 to ensure a balance between computational efficiency and robust gradient updates. Input images are resized to 640×640 to standardize the dataset and optimize memory usage.
+
+**Mosaic Augmentation**: We apply mosaic augmentation with a factor of 1.0 during training. This technique combines four random brain images into one composite training image, simulating different hemorrhage patterns and variations. By merging multiple views into a single training sample, the model learns to better detect various types of brain hemorrhages and their appearances, contributing to the improved detection performance across diverse ICH presentations.
+
+
 ## Datasets
 
 ### BHX Dataset
