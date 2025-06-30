@@ -1,0 +1,6 @@
+{
+    "query": "Detect and segment any medical abnormalities in this image using YOLOv10 for detection, clustering for point generation, and SAM for segmentation.",
+    "images": [
+        "/home/aditya/shashwath/Med_VisualSketchpad1/tasks/medical_segmentation/processed/val_case_1/CT000113.png"
+    ]
+}
