@@ -57,7 +57,7 @@ pip install pillow
 pip install numpy
 pip install matplotlib
 pip install omegaconf
-pip install pyautogen
+pip install ag2
 ```
 
 ### Model Weights
